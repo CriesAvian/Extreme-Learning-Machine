@@ -69,11 +69,11 @@ class elm:
       X = H.T
     
     #Classification Task
-    if class_type == 0:
+    if self.class_type == 0:
       output = np.round(np.dot(H.T,self.B))
       return output
     
     #Regression Task
-    if class_type == 1:
+    if self.class_type == 1:
       output = np.dot(H.T,self.B)
       return output
